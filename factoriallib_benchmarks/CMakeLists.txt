@@ -1,0 +1,8 @@
+project(factoriallib_benchmarks)
+
+add_subdirectory(lib)
+
+add_executable(factoriallib_benchmarks_run falgo_benchmark.cpp)
+
+target_link_libraries(factoriallib_benchmarks_run factoriallib_lib)
+target_link_libraries(factoriallib_benchmarks_run benchmark::benchmark)
